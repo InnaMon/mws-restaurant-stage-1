@@ -10,7 +10,8 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+  position:relative;
+  width: 100%; /* not sure if i need to add this width */
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -35,6 +36,7 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -133,10 +135,10 @@ nav h1 a {
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
-  list-style: outside none none;
-  margin: 0;
+  /*list-style: outside none none; */
+  margin: auto;
   /*padding: 30px 15px 60px; */ 
-  width: 100%;
+  width: 85%;
   text-align: center;
 }
 #restaurants-list li {
