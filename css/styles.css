@@ -190,7 +190,6 @@ nav h1 a {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  
 }
 
 /* ====================== Restaurant Details ====================== */
@@ -287,6 +286,26 @@ nav h1 a {
 
 /*-------------TABLET VIEWPORT-------------*/
 @media screen and (min-width: 750px) {
+  #footer {
+    font-size: 11pt;
+    letter-spacing: 1px;
+  }
+  nav h1 {
+    margin: auto;
+    padding: 2%;
+  }
+  nav h1 a {
+    font-size: 16pt;
+  }
+  #breadcrumb {
+      font-size: 17px;
+  }
+  .filter-options h2 {
+    font-size: 1.3rem;
+  }
+  .filter-options select {
+    font-size: 14pt;
+  }
   .filter-options {
     height: 80px;
     padding-top: 2%;
@@ -304,8 +323,44 @@ nav h1 a {
     width: 45%;
     margin: 2% auto;
   }
-
+  #restaurants-list li h1 {
+    font-size: 14pt;
+  }
+  #restaurants-list p {
+    font-size: 12pt;
+  }
+  #restaurants-list li a {
+    font-size: 12pt;
+  }
+  #restaurant-cuisine {
+    font-size: 11pt;
+  }
+  #reviews-container h2 {
+    font-size: 24pt;
+  }
+  #reviews-list li {}
 }
 
 /*-------------DESKTOP VIEWPORT-------------*/
-@media only screen and (min-width:940px) {}
+@media only screen and (min-width:940px) {
+  .filter-options select {
+    font-size: 14pt;
+  }
+  .filter-options {
+    height: 75px;
+    padding-top: 10px;
+  }
+  #restaurants-list {
+    margin: auto;
+    padding-left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #restaurants-list li {
+    width: 30%;
+    margin: 1% auto;
+  }
+}
