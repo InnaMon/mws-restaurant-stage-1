@@ -78,7 +78,7 @@ initMap = () => {
         scrollWheelZoom: false
       });
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.jpg70?access_token={mapboxToken}', {
-    mapboxToken: 'pk.eyJ1IjoiaW5uYW0iLCJhIjoiY2pybDJicDRiMDQyMzQ0bnp1aHYxbTg5YyJ9.IH4hzRCLshwsQDMvRAx2PA',
+    mapboxToken: 'pk.eyJ1IjoiaW5uYW0iLCJhIjoiY2pybnJlanAxMDI4YzQwdGR0eHg0eGhlZiJ9.Jl6_TWBrg5jspuNNZygfHw',
     maxZoom: 18,
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
       '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
@@ -178,6 +178,14 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.tabIndex = '3';
+  more.role= 'button';
+  more.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if(event.keyCode === 13) {
+      marker.onClick();
+    }
+  })
   li.append(more)
 
   return li
