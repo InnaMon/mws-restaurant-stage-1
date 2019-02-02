@@ -18,11 +18,11 @@
   <header>
     <!-- Beginning nav -->
     <nav>
-      <h1><a href="/">Restaurant Reviews</a></h1>
+      <h1><a tabindex = "1" aria-label="home" role="banner"href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
     <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
+      <li><a tabindex = "2" href="/">Home</a></li> <!--do NOT need to add ARIA role since this is an <a> element and has support/focus requirments by default-->
     </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->

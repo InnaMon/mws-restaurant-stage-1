@@ -377,14 +377,6 @@ nav h1 a {
   padding: 0px 40px 70px;
 }
 #reviews-list li {
-  background-color: #fff;
-  border: 2px solid #f3f3f3;
-  display: block;
-  list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
   width: 75%
 }
 
@@ -409,5 +401,8 @@ nav h1 a {
   #restaurants-list li {
     width: 30%;
     margin: 1% auto;
+  }
+  #reviews-list li {
+    width: 85%
   }
 }
