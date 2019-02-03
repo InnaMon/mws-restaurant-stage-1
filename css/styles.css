@@ -36,7 +36,6 @@ h1, h2, h3, h4, h5, h6 {
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 #maincontent {
   background-color: #f3f3f3;
   min-height: 100%;
@@ -69,36 +68,36 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
-    list-style: none;
-    background-color: #eee;
-    font-size: 17px;
-    margin: 0;
-    width: calc(100% - 80px);
+  padding: 10px 40px 16px;
+  list-style: none;
+  background-color: #eee;
+  font-size: 17px;
+  margin: 0;
+  width: calc(100% - 80px);
 }
 
 /* Display list items side by side */
 #breadcrumb li {
-    display: inline;
+  display: inline;
 }
 
 /* Add a slash symbol (/) before/behind each list item */
 #breadcrumb li+li:before {
-    padding: 8px;
-    color: black;
-    content: "/\00a0";
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
 }
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
-    text-decoration: none;
+  color: #0275d8;
+  text-decoration: none;
 }
 
 /* Add a color on mouse-over */
 #breadcrumb li a:hover {
-    color: #01447e;
-    text-decoration: underline;
+  color: #01447e;
+  text-decoration: underline;
 }
 /* ====================== Map ====================== */
 #map {
@@ -136,10 +135,8 @@ nav h1 a {
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
-  /*list-style: outside none none; */
   margin-top: 5%;
   padding-left: 5%;
-  /*padding: 30px 15px 60px; */ 
   width: 85%;
   text-align: center;
 }
@@ -147,10 +144,8 @@ nav h1 a {
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial,sans-serif;
-  /*margin: 15px;*/
   min-height: 380px;
   margin-top: 5%;
-  /* padding: 0 30px 25px; */
   text-align: left;
   width: 100%;
 }
@@ -158,9 +153,7 @@ nav h1 a {
   background-color: #ccc;
   display: block;
   margin: 0;
-  /*max-width: 100%;*/
   min-height: 248px;
-  /*min-width: 100%; */
   width: 100%;
 }
 #restaurants-list li h1 {
@@ -194,9 +187,6 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  /*position: fixed;
-  top: 0;
-  z-index: 1000;*/
   width: 100%;
   margin: auto;
 }
@@ -205,11 +195,8 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  /*height: 87%;*/
   height: 20%;
   position: absolute;
-  /*top: 0;*/
-    /*right: 0;*/
   top: 140px;
   width: 100%;
 }
@@ -217,11 +204,6 @@ nav h1 a {
   background-color: #ccc;
   height: 100%;
   width: 100%;
-}
-.inside #footer {
-  /*bottom: 0;
-  position: absolute;
-  width: 100%;*/
 }
 #restaurant-name {
   color: #f18200;
@@ -344,42 +326,40 @@ nav h1 a {
   #restaurant-cuisine {
     font-size: 11pt;
   }
-
-
-.inside header {
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
+  .inside header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  .inside #map-container {
+    background: blue none repeat scroll 0 0;
+    height: 87%;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 50%;
+  }
+  .inside #footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  #restaurant-container, #reviews-container {
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #fff;
+    width: 45%;
+  }
+  #restaurant-container{
+    padding: 140px 40px 30px;
+  }
+  #reviews-container {
+    padding: 0px 40px 70px;
+  }
+  #reviews-list li {
+    width: 75%
+  }
 }
-.inside #map-container {
-  background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
-}
-.inside #footer {
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-}
-#restaurant-container, #reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  width: 45%;
-}
-#restaurant-container{
-  padding: 140px 40px 30px;
-}
-#reviews-container {
-  padding: 0px 40px 70px;
-}
-#reviews-list li {
-  width: 75%
-}
-
 /*-------------DESKTOP VIEWPORT-------------*/
 @media only screen and (min-width:940px) {
   .filter-options select {
