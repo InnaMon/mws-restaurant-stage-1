@@ -217,3 +217,16 @@ addMarkersToMap = (restaurants = self.restaurants) => {
   });
 } */
 
+/*-----------REGISTER SERVICE WORKER----------------*/
+//  HAS TO BE IN MAIN JS FILE
+if('serviceWorker' in navigator) { //checks if SW is available
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/sw.js') //registers SW at this url, will recieve fetch events for EVERYTHIING in this file
+    .then(function(reg) { //returns a promise
+    console.log('It worked!', reg);
+    }).catch(function(err) {
+    console.log('No good', err);
+    });
+  });
+}
+
